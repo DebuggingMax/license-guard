@@ -1,0 +1,55 @@
+{
+  "name": "license-guard",
+  "version": "1.0.0",
+  "description": "🛡️ License compliance checker for your projects. Scan dependencies, detect problematic licenses, and ensure compliance.",
+  "main": "src/index.js",
+  "bin": {
+    "license-guard": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test src/**/*.test.js",
+    "lint": "eslint src/",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "license",
+    "compliance",
+    "dependency",
+    "audit",
+    "scanner",
+    "sbom",
+    "legal",
+    "opensource",
+    "cli",
+    "enterprise"
+  ],
+  "author": "DebuggingMax",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DebuggingMax/license-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DebuggingMax/license-guard/issues"
+  },
+  "homepage": "https://github.com/DebuggingMax/license-guard#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "spdx-license-list": "^6.9.0",
+    "spdx-satisfies": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
