@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node src/cli.js",
-    "test": "node --test src/**/*.test.js",
+    "test": "find src -name '*.test.js' -exec node --test {} +",
     "lint": "eslint src/",
     "prepublishOnly": "npm test"
   },
