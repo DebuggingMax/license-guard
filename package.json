@@ -1,6 +1,7 @@
 {
   "name": "license-guard",
   "version": "1.0.0",
+  "type": "module",
   "description": "🛡️ License compliance checker for your projects. Scan dependencies, detect problematic licenses, and ensure compliance.",
   "main": "src/index.js",
   "bin": {
